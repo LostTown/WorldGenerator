@@ -191,7 +191,7 @@ public class ChunkDescription {
         averageWater = minWater == 128 ? 0 : minWater;
         if ((int) averageHeight > averageWater)
             averageWater++;
-        System.out.println("min: " + minWater + ", w: " + averageWater + " h:" + averageHeight);
+//        System.out.println("min: " + minWater + ", w: " + averageWater + " h:" + averageHeight);
     }
 
     private boolean isAnyOcean() {

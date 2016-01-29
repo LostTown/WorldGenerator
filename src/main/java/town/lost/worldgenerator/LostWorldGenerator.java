@@ -111,7 +111,7 @@ public class LostWorldGenerator {
             }
         }
         double averageHeight = totalHeight / 256.0;
-        System.out.println("Obtained biomes for " + XZ + " mid " + biomes[8][8] + ",  avg " + averageHeight);
+//        System.out.println("Obtained biomes for " + XZ + " mid " + biomes[8][8] + ",  avg " + averageHeight);
         return new ChunkDescription(XZ, biomes, averageHeight, height);
     }
 
@@ -126,7 +126,7 @@ public class LostWorldGenerator {
         ChunkDescription west = acquireChunkDescription(key.adjXZ(-1, 0));
         ChunkDescription east = acquireChunkDescription(key.adjXZ(+1, 0));
         centre.mergeWith(north, south, west, east);
-        System.out.println("... w: " + centre.averageWater + " h:" + centre.averageHeight);
+//        System.out.println("... w: " + centre.averageWater + " h:" + centre.averageHeight);
 
         // generate to height
         generateToHeight(mx * 16, mz * 16, chunkData, centre);
@@ -195,7 +195,7 @@ public class LostWorldGenerator {
             int max2 = Math.min(max, gen.max);
             int range = max2 - gen.min + 1;
             if (range < 2) {
-                System.out.println(gen + " range " + range);
+//                System.out.println(gen + " range " + range);
                 continue;
             }
             int x = random.nextInt(16);
@@ -205,9 +205,9 @@ public class LostWorldGenerator {
             int size = random.nextInt(bound + 1);
             if (size > 0) {
                 int count = fillIn(chunkData, random, x, y, z, size, gen.material, gen.data);
-                System.out.println(gen + " size " + size + " count: " + count);
+//                System.out.println(gen + " size " + size + " count: " + count);
             } else {
-                System.out.println(gen + " size " + size);
+//                System.out.println(gen + " size " + size);
             }
         }
 
