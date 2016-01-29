@@ -1,0 +1,19 @@
+name: g
+main: town.lost.worldgenerator.BukkitMain
+version: 0.0.1
+load: STARTUP
+description: >
+             World generation and management.
+authors: [peter.lawrey]
+softdepend: [WorldEdit, Vault]
+loadbefore: [MultiWorld, Multiverse-Core]
+database: false
+commands:
+  plots:
+    description: World generator command
+    aliases: [wg]
+    permission: wg.use
+    permission-message: "You are lacking the permission node 'wg.use'"
+permissions:
+  wg.use:
+    default: true
