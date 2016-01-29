@@ -30,7 +30,8 @@ public class LostChunkGenerator extends ChunkGenerator {
     public List<BlockPopulator> getDefaultPopulators(World world) {
         return Arrays.<BlockPopulator>asList(
                 new TreePopulator(),
-                new GrassPopulator());
+                new GrassPopulator(),
+                new SignPopulator());
     }
 
 
