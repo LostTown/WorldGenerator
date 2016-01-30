@@ -16,7 +16,10 @@ import java.util.Random;
 public class SignPopulator extends BlockPopulator {
     @Override
     public void populate(World world, Random random, Chunk source) {
-        if (random.nextInt(20) != 0)
+        int chance = 50;
+        if (Math.abs(source.getX()) + Math.abs(source.getZ()) < 20)
+            chance = 25;
+        if (random.nextInt(chance) != 0)
             return;
         int x = source.getX() * 16 + random.nextInt(10) + 4;
         int z = source.getZ() * 16 + random.nextInt(10) + 5;

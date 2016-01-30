@@ -26,6 +26,7 @@ public enum OreGenerators {
     DIAMOND(5, 16, 0.5, Material.DIAMOND_ORE),
     DIAMOND2(80, 255, 0.5, Material.DIAMOND_ORE), // extreme hills
 
+    GLASS(60, 255, 50, Material.GLASS),
     GREY_GLASS(60, 255, 50, Material.STAINED_GLASS, 7),
     BLACK_GLASS(60, 255, 50, Material.STAINED_GLASS, 15),
     GRANTIE(60, 255, 50, Material.STONE, 1),

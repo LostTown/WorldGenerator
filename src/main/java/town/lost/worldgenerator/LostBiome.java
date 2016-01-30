@@ -30,7 +30,7 @@ public enum LostBiome {
     ICE_MOUNTAINS(Plains, sel(TREE, 3), PACKED_ICE),
     MUSHROOM_ISLAND(Plains, sel(TreeType.BROWN_MUSHROOM, 5, TreeType.RED_MUSHROOM, 5), GRASS),
     MUSHROOM_SHORE(+3, none(), SAND),
-    BEACH(+2, none(), SAND),
+    BEACH(+3, none(), SAND),
     DESERT_HILLS(Hills, sel(TREE, 1), SAND),
     FOREST_HILLS(Hills, sel(TREE, 12, BIG_TREE, 5), GRASS),
     TAIGA_HILLS(Hills, sel(ACACIA, 8, BIG_TREE, 5), GRASS),
