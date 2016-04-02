@@ -88,7 +88,7 @@ public class LostWorldGenerator {
         short[][] height = new short[16][16];
         int totalHeight = 0;
 
-        LostBiome lb2 = LostBiome.BEACH;
+        LostBiome lb2 = LostBiome.BEACHES;
         for (int x = 0; x < 18; x++) {
             for (int z = 0; z < 18; z++) {
                 Biome b = world.getBiome(mx16 + x - 1, mz16 + z - 1);
