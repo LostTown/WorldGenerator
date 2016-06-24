@@ -1,7 +1,7 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <version>0.1.192</version>
+    <version>0.2.110</version>
     <groupId>town.lost</groupId>
     <artifactId>WorldGenerator</artifactId>
     <name>Lost Town - World Generator</name>
@@ -9,25 +9,18 @@
     <dependencies>
         <dependency>
             <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.9.2-R0.1-SNAPSHOT</version>
+            <artifactId>craftbukkit</artifactId>
+            <version>1.10</version>
+            <scope>system</scope>
+            <systemPath>${user.home}/Spigot/craftbukkit-1.10.jar</systemPath>
         </dependency>
 
         <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>craftbukkit</artifactId>
-            <version>1.9.2-R0.1-SNAPSHOT</version>
-            <optional>true</optional>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
         </dependency>
-
-        <!--        <dependency>
-                    <groupId>com.sk89q</groupId>
-                    <artifactId>worldedit</artifactId>
-                    <version>6.1</version>
-                    <scope>system</scope>
-                    <systemPath>${user.home}/Spigot/plugins/worldedit-bukkit-6.1.jar</systemPath>
-                    <optional>true</optional>
-                </dependency>-->
     </dependencies>
 
     <build>
